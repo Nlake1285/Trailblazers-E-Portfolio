@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>CSCI 426 - Senior Design Capstone</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link rel="stylesheet" href="../../assets/css/wa_style.css">
+	<link rel="stylesheet" href="../../assets/css/navstyle.css">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+</head>
+
+<body>
+	<div class="main">
+		<div id="root">
+			<div class="sidenav">
+				<img src="./assets/assets/img/TrailblazerLogo.png" width="110" height="110"
+					style="padding-left: 10px; padding-top: 0px;">
+				<a href="./overview.html">Overview</a>
+				<a href="./user_feedback.html">User Feedback</a>
+				<a href="./reqs_spec.html">Reqs Spec</a>
+				<a href="./storyboard.html">Storyboard</a>
+				<a href="./systems_modeling.html">Systems Modeling</a>
+				<a href="./prototype.html">High-fidelity Prototype</a>
+				<a href="./design_crits.html">Design Crits</a>
+			</div>
+
+			<header id="top"
+				class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-12peh0i"
+				style="background-color: darkblue;">
+				<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="background-color: darkblue; ">
+					<div class="MuiToolbar-root MuiToolbar-regular css-8p5sgb" style="background-color: darkblue; ">
+						<div class="MuiBox-root css-1p5pnqt" role="navigation" aria-label="Primary">
+							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-1f5vq29"
+								href="/courses/cse440/22sp/" tabindex="0">
+								<div class="MuiBox-root css-0">CSCI 426 - Software Design & Dev I</div>
+								<span class="MuiTouchRipple-root css-w0pj6f"></span>
+							</a>
+							<div class="MuiBox-root css-i9gxme"></div>
+							<a class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root css-a6kcvm"
+								href="../../../index.html" tabindex="0">
+								<div class="MuiBox-root css-11wbtq8">All Projects</div>
+								<span class="MuiTouchRipple-root css-w0pj6f"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="MuiContainer-root MuiContainer-maxWidthLg css-1qsxih2" style="font-size: 18px;">
+				<div class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gop1xy">
+					<div class="MuiBox-root css-13o7eu2">
+						<div class="MuiBox-root css-qwy28t" role="main">
+							<h1>Requirements Specification</h1>
+
+							<h2>Project Goals</h2>
+								To specify and categorize functional requirements, data requirements, non-functional requirements, software requirements, and hardware requirements.
+
+							<h2>Functional Requirements</h2>
+							<ul>
+								<li>The system shall allow users to browse and view trail and route data in a map-based interface.</li>
+								<li>Non-contributing users shall be able to use existing trail information without creating content.</li>
+								<li>Contributing users shall be able to submit new routes, descriptions, and photos for review.</li>
+								<li>Admins shall be able to review, approve, or reject user submissions before those changes are published.</li>
+								<li>The system shall support trail-condition reporting, including hazards like downed trees, washouts, or unsafe sections.</li>
+								<li>Users shall be able to edit or update route information while maintaining a moderation and validation workflow.</li>
+								<li>The app shall support engagement features such as experience points and route-related interactions without compromising admin oversight.</li>
+							</ul>
+
+							<h2>Data Requirements</h2>
+							<ul>
+								<li>The system shall store route metadata, including route names, descriptions, difficulty, access conditions, and geospatial route paths.</li>
+								<li>It shall maintain user-generated content, including submissions, edits, and associated photos or media files.</li>
+								<li>It shall store trail-condition data such as hazards, maintenance issues, and route status updates.</li>
+								<li>The database shall support separate roles for admins, contributing users, and non-contributing users.</li>
+								<li>The system shall include validation and moderation workflows so inaccurate or unsafe content is rejected before public release.</li>
+								<li>Data shall be structured to allow efficient lookup, updates, and retrieval for map-based route information and user interactions.</li>
+							</ul>
+
+							<h2>Non-Functional Requirements</h2>
+							<ul>
+								<li>The interface shall be simple, intuitive, and easy to navigate for both new and returning users.</li>
+								<li>Route submission and editing shall be quick and approachable, with a target of under 10 minutes for a straightforward update.</li>
+								<li>The review process shall be efficient, with human review expected to take about one week and automated review under one day when applicable.</li>
+								<li>The system shall prioritize safety and accuracy by validating route information before it is published.</li>
+								<li>The app shall support mobile use for end users while also supporting desktop workflows for admins and reviewers.</li>
+								<li>The system shall be reliable, maintainable, and scalable for future route growth and additional map data.</li>
+							</ul>
+
+							<h2>Hardware Requirements</h2>
+							<ul>
+								<li>The project will be developed primarily on laptops and desktop computers for coding, testing, and iteration.</li>
+								<li>The client, Austin Herron, is more familiar with desktop workflows, so desktop-oriented review and testing will be important.</li>
+								<li>The end-user application will be built primarily for mobile devices because most outdoor app users access trail data on their phones.</li>
+								<li>The system will rely on cloud-based services for storage, hosting, and backend support.</li>
+							</ul>
+
+							<h2>Software Requirements</h2>
+							<ul>
+								<li>We will build a mobile application alongside a companion desktop web application.</li>
+								<li>The database will use PostgreSQL, with Firebase used for hosting and deployment support.</li>
+								<li>The frontend will use React Native to support mobile development in a framework the team is familiar with.</li>
+								<li>The backend will use Go for performance and compatibility with the onX stack.</li>
+								<li>Firebase will also be used for authentication and backend hosting because it is easy to prototype with and deploy quickly.</li>
+								<li>The mapping system will include multiple layers: rendering, tile hosting, imagery, and data.</li>
+								<li>Map rendering options include MapLibre and Mapbox, while tile hosting may use PostGIS, Tippecanoe, PMTiles, or Planetiler.</li>
+								<li>Imagery sources may include NAIP, USGS 3DEP, and USGS US Topo for terrain and topographic information.</li>
+								<li>Map data may come from sources such as Regrid API or PAD-US, depending on availability and requirements.</li>
+							</ul>
+
+							<h2>Appendix A</h2>
+							<p>A link to the requirements spreadsheet can be found here:</p>
+							<p><a href="https://docs.google.com/spreadsheets/d/1GVXV4x-rHfrJ-A2bB6Bp2oTflofE7BWDQr-s9lWedQc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Requirements spreadsheet</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
